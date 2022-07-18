@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=The+Nautigal&display=swap');
+
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+input{
+    letter-spacing: 0.125em;
+}

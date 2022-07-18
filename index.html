@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="config.js"></script>
+    <title>Sign Up Form</title>
+</head>
+<body class="w-screen h-screen " 
+    style="background-image: url(images/img-1.webp); background-position: center;
+            background-size: cover;
+            width: 100px;
+            height: 500px;
+            margin-left: 65%;
+            margin-top: 5%;">
+    <section class="w-[250px]">
+        <h1 class="font-bold text-[28px] mb-2 ml-[48px]">Sign Up Form</h1>
+        <p class="font-regular text-xs mt-2 mb-2 text-gray-500">Please fill your information to create account.</p>
+    
+        <form action="#" name="signup" method="post" id="signUp" class="flex gap-4 flex-col">
+            <div class="flex flex-col gap-2 ml-2">
+                <input type="text" value="" placeholder="First Name" id="firstName" class="w-[220px] h-7 flex items-center border-2 border-pink-500/50 pl-2 rounded-md bg-gray-100" required>
+                <input type="text" value="" placeholder="Middle Name" id="middleName" class="w-[220px] h-7 flex items-center border-2 border-pink-500/50 pl-2 rounded-md bg-gray-100">
+                <input type="text" value="" placeholder="Last Name" id="lastName" class="w-[220px] h-7 flex items-center border-2 border-pink-500/50 pl-2 rounded-md bg-gray-100" required>
+            </div>
+            <div class="flex flex-col">
+                <input type="email" value="" placeholder="enter your email" id="email" class="w-[240px] h-8 flex items-center border-2 border-pink-500/50 pl-2 rounded-md bg-gray-100" required>
+                <!-- <span class="text-red-700 text-sm text-thin ml-2 hidden" id="emailError">email format wrong</span> -->
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="password" id="password" class="w-[240px] h-8 flex items-center border-2 border-pink-500/50 pl-2 rounded-md bg-gray-100" required 
+                style=" -webkit-text-security: disc;">
+            </div>
+            <div>
+                <input type="password" name="confirmpassword" id="confirmPassword" placeholder="confirm password" id="confirmpassword" class="w-[240px] h-8 flex items-center border-2 border-pink-500/50 pl-2 rounded-md bg-gray-100" required
+                style=" -webkit-text-security: disc;">
+            </div>
+            <div class="mt-2">
+                <input type="checkbox" name="term" id="term">
+                <label for="term" class="text-sm text-gray-500">I accept
+                    <strong class="text-purple-500">the Terms of Use and Privacy Policy</strong>
+                </label>
+            </div>
+            <div class="flex flex-row gap-4">
+            <button type="submit" class="singupButton bg-pink-500/75 w-[100px] h-[40px] mt-2 rounded-lg text-white">Sign Up</button>
+        
+            <button type="reset" class="singupButton bg-pink-500/75 w-[100px] h-[40px] mt-2 rounded-full text-white">RESET</button>
+            </div>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
